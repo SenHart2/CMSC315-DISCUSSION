@@ -1,0 +1,39 @@
+# Unit 5 Discussion: Search Algorithms
+
+## Overview
+
+This assignment compares linear search and binary search.
+
+## Learning Objectives
+
+- Implement linear search
+- Implement binary search
+- Compare performance
+- Analyze algorithm efficiency
+
+## Requirements
+
+1. Test both algorithms on a small dataset.
+2. Test both algorithms on a large dataset.
+3. Demonstrate edge cases.
+4. Analyze performance.
+5. Create a real-world search scenario.
+
+
+## Discussion Board Reflection
+
+After completing the programming assignment, add this reflection to your initial discussion post in LEO.
+
+Your reflection should be approximately 150–200 words and address the following questions:
+
+1. What concepts or skills did you learn while completing this assignment?
+2. What challenges did you encounter, and how did you overcome them?
+3. Explain when to use linear versus binary search, including tradeoffs in real-world scenarios.
+
+## Implementation and Results
+
+1. Small dataset: I created a sorted list of five values. Both algorithms returned index 3 for 40 and -1 for 35.
+2. Large dataset: I created a sorted list of 100,000 values and searched for 99,999. Both algorithms returned index 99,999. I used perf_counter to measure search time, excluding dataset creation.
+3. Edge cases: I tested an empty list, a single-element list, the first and last positions, and a missing value. Both algorithms returned the expected indexes or -1.
+4. Performance: I compared linear search, which had O(n) worst-case time complexity, with binary search, which had O(log n) worst-case time complexity. Binary search reduced the remaining search range by half each iteration. Timing varied by run.
+5. Real-world scenario: I used fictional military equipment serial numbers. I searched the unsorted inventory using linear search and sorted a copy before applying binary search. The target was found at index 2 in the original list and index 4 in the sorted list.
